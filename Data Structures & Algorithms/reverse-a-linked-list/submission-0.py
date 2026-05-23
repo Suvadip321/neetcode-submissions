@@ -9,7 +9,7 @@ class Solution:
         p = None
         c = head
         n = None
-        while c is not None:
+        while c:
             n = c.next
             c.next = p
             p = c
