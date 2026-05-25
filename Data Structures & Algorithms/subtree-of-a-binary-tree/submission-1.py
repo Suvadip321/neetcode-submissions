@@ -21,3 +21,4 @@ class Solution:
         if not root:
             return False
         return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+        
