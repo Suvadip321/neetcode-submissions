@@ -8,15 +8,16 @@ class Solution:
     def decode(self, s: str) -> List[str]:
         decoded = []
         i = 0
-        while i < (len(s)):
+        while i < len(s):
             j = i
             while s[j] != "#":
                 j += 1
             n = int(s[i:j])
             j += 1
-            decoded.append(s[j:j+n])
             i = j + n
+            decoded.append(s[j:i])
         return decoded
+
         
 
 
